@@ -16,22 +16,71 @@
 // a) Create a test with an expect statement using the variable provided. 
 // HINT: Check out this resource: https://jestjs.io/docs/expect#expectarraycontainingarray
 
-const colors1 = ["purple", "blue", "green", "yellow", "pink"]
-// Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
-const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
-// Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
+// describe('removeandreShuffle', () => {
+//     const expected = ["purple", "blue"];
+//     it('matches even if received contains additional elements', () => {
+//       expect(["purple", "blue", "green", "yellow", "pink"]).toEqual(expect.arrayContaining(colors1));
+//     });
+//     it('does not match if received does not contain expected elements', () => {
+//       expect(["yellow", "blue", "pink", "green"]).not.toEqual(expect.arrayContaining(colors1));
+//     });
+//   });
 
+// const colors1 = ["purple", "blue", "green", "yellow", "pink"]
+// // Expected output example (can be a different order): ["yellow", "blue", "pink", "green"]
+// const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "saffron"]
+// // Expected output example (can be a different order): ["saffron", "aquamarine", "periwinkle", "indigo", "ochre"]
 
-// b) Create the function that makes the test pass.
+// //      Test Suites: 1 passed, 1 total
+// //      Tests:       2 passed, 2 total
 
+// // b) Create the function that makes the test pass.
+// // Input: [array] of words
+// // Output: first word removed and words returned reshuffled
+// // PsuedoCode:
+// //  Create a function that takes in an array of words.
+// const removeandreShuffle = (arr) => {
+// // Create a for loop to iterate through the array of words
+//     for (let i = 0; i < arr.length; i++) {
+// // Create a variable to save word in current index.
+//         let holdWord = arr[1]
+// // Create a variable and assign a random generator to to identify word
+// // in array.
+//         let randomIndex = Math.floor(Math.random(arr.length))
+// // Word saved in array index is replaced with word from 
+// // random word generator.
+//         arr[i] = arr[randomIndex]
+// // Replacement word will be returned new array.
+//         arr[randomIndex] = holdWord
+//     }
+// // Return first word removed and words returned reshuffled.
+//     return arr
+// }
+// Test Suites: 1 passed, 1 total
+// Tests:       2 passed, 2 total
 
 // --------------------2) Create a function that takes in an object that contains up votes and down votes and returns the end tally.
 
 // a) Create a test with expect statements for each of the variables provided.
 
-const votes1 = {upVotes: 13, downVotes: 2}
-// Expected output: 11
-const votes2 = {upVotes: 2, downVotes: 33}
+///     it("contains up votes and down votes and returns the end tally", () => {
+//       expect(voteTally(votes1)).toEqual("11")
+//     })
+//   })
+
+//   // Create a function and have test, run the test and practice
+//   // the red step in the red-green-refactor.  
+// const voteTally = (obj) => {
+//     return Object.values(obj).parseInt()
+//     console.log(values)
+//    }
+
+// // Test Suites: 1 failed, 1 total
+// // Tests:       1 failed, 1 total
+
+// const votes1 = {upVotes: 13, downVotes: 2}
+// // Expected output: 11
+// const votes2 = {upVotes: 2, downVotes: 33}
 // Expected output: -31
 
 
@@ -42,9 +91,26 @@ const votes2 = {upVotes: 2, downVotes: 33}
 
 // a) Create a test with an expect statement using the variables provided.
 
+describe("returnOne", () => {
+    it("returns one array with no duplicate values", () => {
+      expect(dataArray1).toEqual(["array", "object", "number", "string", "Boolean", "null", "undefined"])
+    })
+  })
+
 const dataArray1 = ["array", "object", "number", "string", "Boolean"]
-const dataArray2 = ["string", "null", "Boolean", "string", "undefined"]
+// const dataArray2 = ["string", "null", "Boolean", "string", "undefined"]
 // Expected output: ["array", "object", "number", "string", "Boolean", "null", "undefined"]
+
+// Test Suites: 1 failed, 1 total
+// Tests:       1 failed, 1 total
 
 
 // b) Create the function that makes the test pass.
+const returnOne = (array1, array2) => {
+    // Create a function that takes in two arrays as arguments.
+    return array12 = [...array1, ...array2] 
+    // inserting values from array1 and 2 into one array using spread  
+    // operator
+} 
+
+    
