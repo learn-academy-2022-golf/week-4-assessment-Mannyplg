@@ -78,39 +78,58 @@
 // // Test Suites: 1 failed, 1 total
 // // Tests:       1 failed, 1 total
 
-// const votes1 = {upVotes: 13, downVotes: 2}
+describe("endtallyVotes", () => {
+  it("contains up votes and down votes and returns the end tally", () => {
+    expect(endtallyVotes(votes1)).toEqual(11)
+  })
+})
+
+const votes1 = {upVotes: 13, downVotes: 2}
 // // Expected output: 11
-// const votes2 = {upVotes: 2, downVotes: 33}
+const votes2 = {upVotes: 2, downVotes: 33}
 // Expected output: -31
+
+// 23 Nov.-- Mistake found...
+const endtallyVotes = (object) => {
+  // Create a function, that takes an object
+  return object.upVotes - object.downVotes
+  // oject can define own behavior, called instance methods. Called through type
+  // conversion and you don't have to call yourself in your code.
+}
 
 
 // b) Create the function that makes the test pass.
+// Test Suites: 1 failed, 1 total
+// Tests:       1 failed, 1 total
+
+//Test Suites: 1 passed, 1 total
+// Tests:       1 passed, 1 total
 
 
 // --------------------3) Create a function that takes in two arrays as arguments and returns one array with no duplicate values. STRETCH: Use the spread operator to pass in a dynamic number of arguments.
 
 // a) Create a test with an expect statement using the variables provided.
 
-describe("returnOne", () => {
-    it("returns one array with no duplicate values", () => {
-      expect(dataArray1).toEqual(["array", "object", "number", "string", "Boolean", "null", "undefined"])
-    })
-  })
+// describe("returnOne", () => {
+//     it("returns one array with no duplicate values", () => {
+//       expect(dataArray1).toEqual(["array", "object", "number", "string", "Boolean", "null", "undefined"])
+//     })
+//   })
 
-const dataArray1 = ["array", "object", "number", "string", "Boolean"]
-// const dataArray2 = ["string", "null", "Boolean", "string", "undefined"]
-// Expected output: ["array", "object", "number", "string", "Boolean", "null", "undefined"]
+// const dataArray1 = ["array", "object", "number", "string", "Boolean"]
+// // const dataArray2 = ["string", "null", "Boolean", "string", "undefined"]
+// // Expected output: ["array", "object", "number", "string", "Boolean", "null", "undefined"]
 
-// Test Suites: 1 failed, 1 total
-// Tests:       1 failed, 1 total
+// // Test Suites: 1 failed, 1 total
+// // Tests:       1 failed, 1 total
 
 
-// b) Create the function that makes the test pass.
-const returnOne = (array1, array2) => {
-    // Create a function that takes in two arrays as arguments.
-    return array12 = [...array1, ...array2] 
-    // inserting values from array1 and 2 into one array using spread  
-    // operator
-} 
+// // b) Create the function that makes the test pass.
+// const returnOne = (array1, array2) => {
+//     // Create a function that takes in two arrays as arguments.
+//     return array12 = [...array1, ...array2] 
+//     // inserting values from array1 and 2 into one array using spread  
+//     // operator
+// } 
 
     
